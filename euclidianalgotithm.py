@@ -11,7 +11,7 @@ def gcd(a, b):
     while True :
         if a % b == 0:
             # checks if it is comptely divisible
-            return a // b
+            return b
         x = a % b
         y = b % x 
         if x == 0:
@@ -20,5 +20,3 @@ def gcd(a, b):
             return x 
         x = x % y
         y = y % x
-
-print(gcd(18, 24))
